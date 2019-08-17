@@ -1,0 +1,48 @@
+<View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    height="100%"
+    controllerName="sap.ui.demo.walkthrough.controller.View2">
+    <Page
+        title="asdfsa"
+        class="sapUiContentPadding" >
+        <customHeader>
+            <Toolbar>
+                <Button type="Back" press="onPress" />
+                <ToolbarSpacer/>
+                <Title text="{/userid}" level="H2"/>
+                <ToolbarSpacer/>
+                <Button icon="sap-icon://home" press="onPress" ariaLabelledBy="editButtonLabel"/>
+            </Toolbar>
+
+        </customHeader>
+<!--         <subHeader>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="Default" press="onPress" />
+                <Button type="Reject" text="Reject" press="onPress" />
+                <Button icon="sap-icon://action" press="onPress" ariaLabelledBy="actionButtonLabel"/>
+                <ToolbarSpacer/>
+            </Toolbar>
+        </subHeader> -->
+        <content>
+            <HBox>
+                <Button text="Person"
+                        press="person"
+                        width ="200px"
+                        class="deneme"
+                        ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+                </Button>
+            </HBox>
+        </content>
+   <!--      <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button type="Emphasized" text="Emphasized" press="onPress" />
+                <Button text="Default" press="onPress" />
+                <Button icon="sap-icon://action" press="onPress" />
+            </Toolbar>
+        </footer> -->
+    </Page>
+</View>

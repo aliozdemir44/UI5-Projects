@@ -1,0 +1,105 @@
+
+    <mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.persondetail"
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns="sap.m">
+
+  <VBox class="sapUiSmallMargin">
+    <f:SimpleForm id="SimpleFormToolbar"
+      editable="true"
+      layout="ResponsiveGridLayout"
+      labelSpanXL="4"
+      labelSpanL="3"
+      labelSpanM="4"
+      labelSpanS="12"
+      adjustLabelSpan="false"
+      emptySpanXL="0"
+      emptySpanL="4"
+      emptySpanM="0"
+      emptySpanS="0"
+      columnsXL="2"
+      columnsL="1"
+      columnsM="1"
+      singleContainerFullSize="false"
+      ariaLabelledBy="Title1" >
+      <f:toolbar>
+        <Toolbar id="TB1">
+           <Button icon="sap-icon://arrow-left"/>
+          <Title id="Title1" text="Personel Listesi" level="H4" titleStyle="H4"/>
+          <ToolbarSpacer />
+          <Button icon="sap-icon://save"/>
+          <Button icon="sap-icon://home"/>
+        </Toolbar>
+      </f:toolbar>
+
+      <f:content>
+
+            <Label  text="Ad"  />
+            <Input   value ="asasasas" id = "ad"    />
+
+            <Label  text="Soyad"  />
+            <Input  id = "soyad"   />
+
+            <Label  text="TC Kimlik No"  />
+            <Input  id = "tc"  enabled = "false" />
+
+            <Label  text="Mail"  />
+            <Input   id = "mail"  />
+
+            <Label  text="Telefon"  />
+            <Input  id = "tel"  />
+
+            <Label  text="ennda"   />
+            <Input  type = "Date" id = "endda"  />
+
+            <Label  text="begda"   />
+            <Input  type = "Date" id = "begda"  />
+
+            <Label text="Cinsiyet" />
+            <Select id="Cinsiyet" selectedKey="Cinsiyet">
+              <items>
+                <core:Item text="Erkek" key="Erkek"/>
+                <core:Item text="Kadın" key="Kadın"/>
+              </items>
+            </Select>
+
+            <Label  text="Yaş"  />
+            <Input  id = "yas"  />
+
+            <Label text="Uyruk" />
+            <Select id="Uyruk" selectedKey="Uyruk">
+              <items>
+                <core:Item text="TÜRKİYE" key="TR"/>
+                <core:Item text="AMERİKA" key="US"/>
+              </items>
+            </Select>
+
+          <Toolbar ariaLabelledBy="Title3">
+            <Title id="Title3" text="Organizasyon" level="H5" titleStyle="H5"/>
+            <ToolbarSpacer />
+          </Toolbar>
+
+
+
+            <Label text="Statu" />
+            <Select id="Statu" selectedKey="Statu">
+              <items>
+                <core:Item text="Etkin"   key="1"/>
+                <core:Item text="Pasif"   key="2"/>
+              </items>
+            </Select>
+
+
+            <Label text="Orhanizasyon" />
+            <Input  id = "orgeh" />
+
+            <Label text="Pozisyon" />
+            <Input id="plans" />
+
+      </f:content>
+    </f:SimpleForm>
+  </VBox>
+</mvc:View>
